@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <!-- Foreground Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="170dp"
+        android:padding="24dp">
+
+
+        <!-- App Logo -->
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/img" />
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_bg"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:text="Forgot Password?"
+            android:textColor="#3F51B5"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
